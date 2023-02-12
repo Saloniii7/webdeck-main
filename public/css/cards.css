@@ -1,0 +1,85 @@
+/* body{
+    margin: 0;
+    padding: 0;
+    background-color: #BCAAA4;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Segoe UI;
+} */
+
+
+.face {
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+    transition: .4s;
+    border-radius: 20px;
+}
+
+.face1 {
+    position: relative;
+    background: #333;
+    display: flex;
+    height: 300px;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    z-index: 1;
+    transform: translateY(140px);
+}
+
+#dessert {
+    width: 100%;
+    /* height: 28vh; */
+}
+
+.face2 {
+    background: whitesmoke;
+    display: flex;
+    /* height: 300px; */
+    padding-left: 20px;
+    padding-right: 20px;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    transform: translateY(-160px);
+}
+
+.cardi:hover .face.face1 {
+    transform: translateY(0);
+    box-shadow: inset 0 0 60px whitesmoke,
+        inset 20px 0 80px #f0f,
+        inset -20px 0 80px #0ff,
+        inset 20px 0 300px #f0f,
+        inset -20px 0 300px #0ff,
+        0 0 50px #fff,
+        -10px 0 80px #f0f,
+        10px 0 80px #0ff;
+}
+
+.outer {
+    opacity: .3;
+    text-align: center;
+    transition: 0.5s;
+}
+
+.cardi:hover .outer {
+    opacity: 1;
+}
+
+.cardi:hover .face.face2 {
+    transform: translateY(0);
+}
+
+#change {
+    padding-top: 20px;
+    color: black;
+}
+
+.title {
+    position: absolute;
+    top: 135px;
+    color: #fff;
+}

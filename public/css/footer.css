@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Poppins:wght@300;400;500;600;700&display=swap');
+
+footer {
+    line-height: 1.5;
+    font-family: 'Poppins', sans-serif;
+}
+
+.foot,
+.contain_footer,
+.footer_row,
+.footer_col,
+.ul_footer,
+.socials,
+.footer_copyright {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.contain_footer {
+    max-width: 1170px;
+    margin: auto;
+}
+
+.footer_row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.ul_footer {
+    list-style: none;
+}
+
+.foot {
+    background-color: #24262b;
+    padding: 30px 0px;
+
+}
+
+.footer_col {
+    width: 25%;
+    padding: 0px 15px;
+}
+
+.footer_col h4 {
+    font-size: 20px;
+    color: white;
+    text-transform: capitalize;
+    margin-bottom: 35px;
+    font-weight: 500;
+    position: relative;
+}
+
+.footer_col h4::before {
+    content: ' ';
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    background-color: #e91e63;
+    height: 2px;
+    box-sizing: border-box;
+    width: 50px;
+    background-color: red;
+}
+
+.footer_col ul li:not(:last-child) {
+    margin-bottom: 10px;
+}
+
+.footer_col ul li a {
+    font-size: 16px;
+    text-transform: capitalize;
+    color: white;
+    text-decoration: none;
+    font-weight: 300;
+    color: #bbbbbb;
+    display: block;
+    transition: all 0.3s ease;
+}
+
+.footer_col ul li a:hover {
+    color: white;
+    padding-left: 10px;
+}
+
+/* 
+.footer_col .socials a {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background-color: rgba(255, 255, 255, 0.2);
+    margin-right: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: white;
+    transition: all 0.5s ease;
+} */
+
+/* .footer_col .socials a:hover {
+    color: #24262b;
+    background-color: white;
+} */
+
+.footer_copyright {
+    color: white;
+    word-spacing: 2;
+    font-weight: 450;
+}
+
+@media(max-width : 767px) {
+    .footer_col {
+        width: 50%;
+        margin-bottom: 30px
+    }
+}
+
+@media(max-width : 574px) {
+    .footer_col {
+        width: 100%;
+    }
+}

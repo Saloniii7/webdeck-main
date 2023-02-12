@@ -1,0 +1,181 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="/css/newHome.css">
+
+    <title>Dashboard</title>
+</head>
+
+<body> -->
+<%layout("boilerplate")%>
+    <link rel="stylesheet" href="/css/newHome.css">
+
+
+
+    <section id="content">
+
+
+        <main>
+            <div class="headtitlecolor" data-aos="flip-in" data-aos-duration="1000" data-aos-once="false">
+                <div class="head-title">
+                    <div class="left">
+                        <h1 style="color: white;">Dashboard</h1>
+
+                    </div>
+
+                </div>
+
+                <ul class="box-info">
+                    <li>
+                        <i class='bx bx-laptop'></i>
+                        <span class="text">
+
+                            <%for(let c of comm){%>
+                                <% if(curruser && c.author.equals(curruser._id)) {%>
+
+                                    <h3>
+                                        <%=c.name%>
+                                    </h3>
+
+
+                                    <%}%>
+                                        <%}%>
+                                            <p>Name</p>
+
+                        </span>
+                    </li>
+                    <li>
+                        <i class='bx bxs-briefcase-alt-2'></i>
+                        <span class="text">
+                            <%for(let c of comm){%>
+                                <% if(curruser && c.author.equals(curruser._id)) {%>
+                                    <h3>
+                                        <%=c.community%>
+                                    </h3>
+                                    <%}%>
+                                        <%}%>
+                                            <p>Community</p>
+                        </span>
+                    </li>
+                    <li>
+
+                        <i class='bx bxs-dollar-circle'></i>
+                        <span class="text">
+                            <h3 class="tier">
+                                Beginner
+                            </h3>
+                            <p>Tier</p>
+                        </span>
+                    </li>
+                </ul>
+            </div>
+            <div class="medbtn">
+                <button class="btn-primary progressbtn"
+                    style="color:black; font-size: 1.3em; font-weight: bolder; border: none;">Award
+                    points</button>
+            </div>
+
+            <div class="table-data">
+                <div class="order">
+                    <div class="head">
+                        <h3>Track Progress</h3>
+                        <i class='bx bx-search'></i>
+                        <i class='bx bx-filter'></i>
+                    </div>
+                    <div class="progress">
+                        <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 0%"
+                            aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+
+                    </div>
+
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Title</th>
+                                <th>Date </th>
+                                <th>Status</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <p>Project 1</p>
+                                </td>
+                                <td>01-10-2021</td>
+                                <td><span class="status completed">Completed</span></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <p>Project 2</p>
+                                </td>
+                                <td>01-10-2021</td>
+                                <td><span class="status pending">Pending</span></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <p>Project 3</p>
+                                </td>
+                                <td>01-10-2021</td>
+                                <td><span class="status process">Process</span></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <p>Project 4</p>
+                                </td>
+                                <td>01-10-2021</td>
+                                <td><span class="status pending">Pending</span></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <p>Project 5</p>
+                                </td>
+                                <td>01-10-2021</td>
+                                <td><span class="status completed">Completed</span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="todo">
+                    <div class="head">
+                        <h3>My Notes</h3>
+                        <i class='bx bx-plus'></i>
+                        <i class='bx bx-filter'></i>
+                    </div>
+                    <ul class="todo-list">
+                        <li class="completed">
+                            <p>Todo List</p>
+                            <i class='bx bx-dots-vertical-rounded'></i>
+                        </li>
+                        <li class="completed">
+                            <p>Todo List</p>
+                            <i class='bx bx-dots-vertical-rounded'></i>
+                        </li>
+                        <li class="not-completed">
+                            <p>Todo List</p>
+                            <i class='bx bx-dots-vertical-rounded'></i>
+                        </li>
+                        <li class="completed">
+                            <p>Todo List</p>
+                            <i class='bx bx-dots-vertical-rounded'></i>
+                        </li>
+                        <li class="not-completed">
+                            <p>Todo List</p>
+                            <i class='bx bx-dots-vertical-rounded'></i>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </main>
+    </section>
+
+
+
+    <!-- <script src="/js/newHome.js"></script>
+    </body>
+
+    </html> -->

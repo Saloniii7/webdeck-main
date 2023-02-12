@@ -1,0 +1,72 @@
+<%layout('boilerplate')%>
+    <link rel="stylesheet" href="/css/contact.css">
+    <% if(success &&success.length){ %>
+        <div class="alert alert-success alert-dismissible fade show" role="alert"
+            style="margin-top:120px;width:50%;margin-left:350px">
+            <%=success%>
+                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+        </div>
+        <% } %>
+            <% if(error &&error.length){ %>
+                <div class="alert alert-danger alert-dismissible fade show" role="alert"
+                    style="margin-top:120px;width:50%;margin-left:350px">
+                    <%=error%>
+                        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                </div>
+                <% } %>
+
+                    <div class="row" style="margin-top:100px;">
+                        <div class="col-md-4"></div>
+                        <div class="col-md-6">
+                            <div class="card" style="width: 25rem;" id="logincard">
+                                <img src="images/login.jpg" class="card-img-top"
+                                    style="border-radius:50%;width:50%;margin-left:95px">
+                                <div class="card-body">
+                                    <h5 class="card-title text-center" style="font-weight: 900;">LOGIN</h5>
+                                    <form action="/login" method="post" class="validated-form" novalidate>
+                                        <div class="mb-3">
+                                            <label for="username" class="my-2 darki">Username : </label>
+                                            <input type="text" name="username" id="username" class="form-control"
+                                                required>
+                                            <div class="valid-feedback">
+                                                Looks good!
+                                            </div>
+                                        </div>
+
+                                        <div class="mb-3">
+                                            <label for="passwd" class="my-2 darki">Password : </label>
+                                            <input type="password" name="password" id="passwd" class="form-control"
+                                                required>
+                                            <div class="valid-feedback">
+                                                Looks good!
+                                            </div>
+                                        </div>
+                                        <button class="btn btn-success">Login</button>
+                                    </form>
+                                    <form action="/register">
+                                        <label for="reg" style="color:var(--darktext);font-weight: 900;"
+                                            class="mt-3">Don't have
+                                            an
+                                            account?</label><br>
+                                        <button class="btn btn-primary mt-2">Register</button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+
+                    <br>
+                    <br>

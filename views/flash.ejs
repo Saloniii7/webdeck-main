@@ -1,0 +1,17 @@
+<% if(success &&success.length){ %>
+    <div class="alert alert-success alert-dismissible fade show" role="alert"
+        style="margin-top:40px;width:50%;margin-left:350px">
+        <%=success%>
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+    </div>
+    <% } %>
+        <% if(error &&error.length){ %>
+            <div class="alert alert-danger alert-dismissible fade show" role="alert">
+                <%=error%>
+                    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+            </div>
+            <% } %>

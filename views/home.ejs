@@ -1,0 +1,321 @@
+<%layout("boilerplate")%>
+    <link rel="stylesheet" href="/css/cards.css">
+    <link rel="stylesheet" href="/css/movingcard.css">
+    <link rel="stylesheet" href="/css/landingpage.css">
+    <div className='home_header'>
+
+        <div className='left'>
+            <h1 className='user_header'>Welcome, </h1>
+            <p className='para_header'> Diversity in tech: Closing the gap in Modern Industry<br></br></p>
+            <button className='btn' onClick={loginroute}>Get Started</button>
+        </div>
+
+    </div>
+
+    <div className='home_diversity'>
+        <div className='project_container'>
+            <article className='project_item '>
+                <h3>Diversity and Inclusion</h3>
+
+
+
+                <p>Diversity in tech is all about bringing more perspectives to a traditionally homogeneous and often
+                    non-inclusive industry.The aim of these efforts is to create a more diverse workplace where all
+                    employees feel valued and supported, leading to increased innovation, better problem-solving, and
+                    improved performance. The lack of a diverse workplace can lead to a homogeneous workplace culture
+                    where certain perspectives and experiences are not represented, potentially leading to products and
+                    services that do not meet the needs of all users.</p>
+
+            </article>
+            <article className='about_us'>
+                <h3>{props.name2}</h3>
+
+
+                <p>{props.desc2}</p>
+            </article>
+
+        </div>
+
+    </div>
+
+    <div className='home_about'>
+        <div className='about_us_container'>
+            <article className='about_us proj_left' data-aos="flip-right">
+                <h3>About Us</h3>
+
+
+                <p>We recognize the importance of building inclusive technology
+                    cultures that foster engagement, collaboration, and belonging that reflect a diverse technology
+                    workforce and deliver value.</p>
+
+            </article>
+            <div className='project_item  proj_right info_div ' data-aos="zoom-in">
+                <article className='child_div'>
+                    40+ <br />Companies
+
+                </article>
+                <article className="child_div">80+<br />Open Source Organizations</article>
+                <article className="child_div">1k Mentors</article>
+                <article className="child_div">50+<br /> Communites from Around The Globe</article>
+                <article className="child_div">Courses in 12<br />Different Languages</article>
+                <article className="child_div">8k Happy Learners</article>
+            </div>
+
+
+        </div>
+
+    </div>
+    <div className='home_creators'>
+
+    </div>
+    <div id="carouselExampleCaptions" class="carousel slide carousel-fade" data-ride="carousel" style="margin-top:60px">
+        <ol class="carousel-indicators">
+            <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+            <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="images/ella-olsson-4dQiaWKiL-Y-unsplash.jpg" class="d-block w-100 h-100" id="img1" alt="...">
+                <div class="carousel-caption  d-block" id="cap1">
+                    <p id="h2">
+                        <!-- <span id="message" style="font-family: 'Pacifico', cursive;"></span> -->
+                        <span id="message" style="font-family: 'Creepster', cursive;"></span>
+                    </p>
+                    <p style="font-family: 'Pacifico', cursive;" id="desc" class="desc">We serve
+                        Gourmet food</p>
+                    <p class="mt-4 desc1" id="desc1">
+
+                        <a href="/reservation" class="btn btn-outline-light mx-3"
+                            style="font-family: 'Pacifico', cursive;">Book a
+                            Table</a>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-x-diamond-fill" viewBox="0 0 16 16">
+                            <path
+                                d="M9.05.435c-.58-.58-1.52-.58-2.1 0L4.047 3.339 8 7.293l3.954-3.954L9.049.435zm3.61 3.611L8.708 8l3.954 3.954 2.904-2.905c.58-.58.58-1.519 0-2.098l-2.904-2.905zm-.706 8.614L8 8.708l-3.954 3.954 2.905 2.904c.58.58 1.519.58 2.098 0l2.905-2.904zm-8.614-.706L7.292 8 3.339 4.046.435 6.951c-.58.58-.58 1.519 0 2.098l2.904 2.905z" />
+                        </svg>
+                        <a href="/contact" class="btn btn-outline-light mx-3"
+                            style="font-family: 'Pacifico', cursive;">Contact
+                            Us</a>
+
+                    </p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="images/francisco-galarza-R9xj7bGT5aw-unsplash.jpg" class="d-block w-100 h-100" id="img1"
+                    alt="...">
+                <div class="carousel-caption  d-block" id="cap1">
+                    <p id="h2" style="font-family: 'Creepster', cursive;">Gourfood</p>
+                    <p style="font-family: 'Pacifico', cursive;">We serve Gourmet food</p>
+                    <p class="mt-4">
+
+                        <a href="/reservation" class="btn btn-outline-light mx-3"
+                            style="font-family: 'Pacifico', cursive;">Book a
+                            Table</a>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-x-diamond-fill" viewBox="0 0 16 16">
+                            <path
+                                d="M9.05.435c-.58-.58-1.52-.58-2.1 0L4.047 3.339 8 7.293l3.954-3.954L9.049.435zm3.61 3.611L8.708 8l3.954 3.954 2.904-2.905c.58-.58.58-1.519 0-2.098l-2.904-2.905zm-.706 8.614L8 8.708l-3.954 3.954 2.905 2.904c.58.58 1.519.58 2.098 0l2.905-2.904zm-8.614-.706L7.292 8 3.339 4.046.435 6.951c-.58.58-.58 1.519 0 2.098l2.904 2.905z" />
+                        </svg>
+                        <a href="/contact" class="btn btn-outline-light mx-3"
+                            style="font-family: 'Pacifico', cursive;">Contact
+                            Us</a>
+
+                    </p>
+                </div>
+
+            </div>
+            <div class="carousel-item">
+                <img src="images/julien-sarazin-n3mK4n_nF7g-unsplash.jpg" class="d-block w-100 h-100 " id="img1"
+                    alt="...">
+                <div class="carousel-caption  d-block" id="cap1">
+                    <p id="h2" style="font-family: 'Creepster', cursive;">Gourfood</p>
+                    <p style="font-family: 'Pacifico', cursive;">We serve Gourmet food</p>
+                    <p class="mt-4">
+
+                        <a href="reservation" class="btn btn-outline-light mx-3"
+                            style="font-family: 'Pacifico', cursive;">Book a
+                            Table</a>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-x-diamond-fill" viewBox="0 0 16 16">
+                            <path
+                                d="M9.05.435c-.58-.58-1.52-.58-2.1 0L4.047 3.339 8 7.293l3.954-3.954L9.049.435zm3.61 3.611L8.708 8l3.954 3.954 2.904-2.905c.58-.58.58-1.519 0-2.098l-2.904-2.905zm-.706 8.614L8 8.708l-3.954 3.954 2.905 2.904c.58.58 1.519.58 2.098 0l2.905-2.904zm-8.614-.706L7.292 8 3.339 4.046.435 6.951c-.58.58-.58 1.519 0 2.098l2.904 2.905z" />
+                        </svg>
+                        <a href="/contact" class="btn btn-outline-light mx-3"
+                            style="font-family: 'Pacifico', cursive;">Contact
+                            Us</a>
+
+                    </p>
+                </div>
+
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+
+    <br>
+
+    <br>
+    <div class="design-parent">
+        <div class="main">
+            <!-- <div class="d1"></div> -->
+            <div class="d2"></div>
+            <div class="d3">
+                <!-- <h4 style="color:rgb(223, 21, 21);padding-top:20px;text-decoration:underline;">ABOUT US</h4> -->
+                <p class="texting">
+
+                    <span class="colchange"><b>NOTHING’S MORE GLOBAL</b></span>
+                    than food served right on your table.
+                    <br>
+                    <span class="colchange"><b>NOTHING’S FRESHER</b></span>
+                    than every dressing, every stock, every sauce made from scratch.
+                    Every day.
+                    <br>
+                    <span class="colchange"><b>NOTHING’S TRUER TO WHO WE ARE</b></span>
+                    than letting our craft brews and handcrafted foods inspire one another in unexpected ways.
+                    <br>
+                    And while we’re the
+                    most award-winning gourmet dining
+                    not only in India but internationally,
+                    we’re not in it for the fame or the glory.
+                    <br>
+                    We’re in it because we love what we do.
+                    Which is refined culinary.
+                    Getting creative in the kitchen.
+                    And integrating our passion from pan to table.
+                    <br>
+                    We’re more than a scratch kitchen.
+                    We’re more than a fine eatery.
+                    <br>
+                    We’re
+                    <span class="colchange">GOURFOOD</span>
+                </p>
+            </div>
+            <div class="d4"></div>
+                
+        </div>
+    </div>
+    <!-- <div class="card mb-3" id="aboutcard">
+        <div class="row no-gutters">
+            <div class="col-md-4">
+                <img src="images/dan-rooney-qm6yxe7SjWg-unsplash.jpg" class="card-img" alt="...">
+            </div>
+            <div class="col-md-8">
+                <div class="card-body">
+                    <h5 class="card-title">About Us</h5>
+                    <p class="card-text">NOTHING’S MORE
+                        than every dressing, every stock, every sauce made from scratch.
+                        Every day. GLOBAL
+                        than food served right on your table.
+
+                        NOTHING’S FRESHER
+
+                        NOTHING’S TRUER TO WHO WE ARE
+                        than letting our craft brews and handcrafted foods inspire one another in unexpected ways.
+
+                        And while we’re the
+                        most award-winning gourmet dining
+                        not only in India but internationally,
+                        we’re not in it for the fame or the glory.
+
+                        We’re in it because we love what we do.
+                        Which is refined culinary.
+                        Getting creative in the kitchen.
+                        And integrating our passion from pan to table.
+
+                        We’re more than a scratch kitchen.
+                        We’re more than a fine eatery.
+
+                        We’re
+                        GOURFOOD</p>
+                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                </div>
+            </div> -->
+    <!-- </div>
+    </div> -->
+
+    <br>
+    <div class="card-group m-md-3">
+
+        <div class="row mx-3">
+            <div class="col-md-4">
+                <div class="cardi">
+                    <div class="contain_mov_card">
+
+                        <div class="face face1">
+                            <div class="outer">
+                                <h1 class="title">Food</h1>
+                                <img src="images/foodmenu1.jpg" class="card-img" id="dessert" alt="">
+                            </div>
+                        </div>
+                        <div class="face face2">
+                            <div class="inner">
+                                <p id="change">Experience aesthetically balanced meals of several contrasting and rich
+                                    courses. Get absorbed by the cross-cultural interactions when it comes to Gourmet,
+                                    introducing new ingredients, materials and practices. You never know when you
+                                    transcend from eating to being eaten. </p>
+                                <a href="/menu#food" class="btn btn-primary" type="button">Food menu</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="cardi">
+                    <div class="contain_mov_card">
+
+                        <div class="face face1">
+                            <div class="outer">
+                                <h1 class="title">Drinks</h1>
+                                <img src="images/foodmenu2.jpg" id="dessert" alt="" class="card-img">
+                            </div>
+                        </div>
+                        <div class="face face2">
+                            <div class="inner">
+                                <p id="change">Not everyone knows what a cocktail is, or how to make one. When it comes
+                                    to GourFood you can trust us with not just the vittles but also the libations. Be it
+                                    fall cocktails, winter cocktails or austere wine, we got you covered with seasonal
+                                    drinks of all kinds. To please your throat or to please your soul, do not hold back
+                                    from trying our gala potions. </p>
+                                <a href="/menu#drinks" class="btn btn-primary" type="button">Drinks menu</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="cardi">
+                    <div class="contain_mov_card">
+
+                        <div class="face face1">
+                            <div class="outer">
+                                <h1 class="title">Desserts</h1>
+                                <img src="images/foodmenu3.jpg" class="card-img-top" id="dessert" alt="">
+                            </div>
+                        </div>
+                        <div class="face face2">
+                            <div class="inner">
+                                <p id="change">If baking was an art form (and some would argue it is), then our patisier
+                                    would be the equivalent of a Picasso. Every dessert is an asymmetrical,
+                                    one-of-a-kind dish. To satisfy your sweet tooth and gratify your moral energy, let's
+                                    get your forks dripping with rich chocolate melange and dive into the world of
+                                    'sweet'
+                                    ecstasy. </p>
+                                <a href="menu#desserts" class="btn btn-primary" type="button">Dessert menu</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <br>

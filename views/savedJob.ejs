@@ -1,0 +1,145 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/JobPage1.css">
+
+    <title>SavedJobs</title>
+</head>
+
+<body> -->
+<%layout("boilerplate")%>
+    <link rel="stylesheet" href="/css/JobPage1.css">
+
+    <div id="container" style="margin-top:5rem;">
+        <div id="filter">
+            <div class="head">
+                <img src="https://cdn-icons-png.flaticon.com/128/60/60954.png" />
+                <div>
+                    All Filter
+                </div>
+            </div>
+            <div>
+                <p>Sort By</p><br>
+                <form>
+                    <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+                    <label for="vehicle1"> Newest to oldest</label><br>
+                    <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+                    <label for="vehicle2"> Prices Lowest to Highest</label><br>
+                    <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+                    <label for="vehicle3"> Most upvoted</label>
+                </form>
+            </div>
+            <br>
+            <br>
+            <hr>
+
+            <div>
+                <p>Credits</p>
+                <form>
+                    <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+                    <label for="vehicle1"> Highest to Lowest</label><br>
+                    <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+                    <label for="vehicle2"> Lowest to Highest</label><br>
+                </form>
+            </div>
+            <br>
+            <br>
+            <hr>
+            <div>
+                <p>Job Type </p>
+                <form>
+                    <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+                    <label for="vehicle1"> FrontEnd Development</label><br>
+                    <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+                    <label for="vehicle2"> BackEnd Development</label><br>
+                    <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+                    <label for="vehicle3"> BlockChain Development</label>
+                </form>
+            </div>
+            <br>
+            <br>
+            <hr>
+            <div>
+                <p>Top Companies</p>
+                <br>
+                <br>
+                <form>
+                    <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+                    <label for="vehicle1"> Google</label><br>
+                    <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+                    <label for="vehicle2"> Adobe</label><br>
+                    <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+                    <label for="vehicle3"> Netflix</label>
+
+                </form>
+            </div>
+            <br>
+        </div>
+
+        <div id="jobs">
+            <p>Saved Jobs</p>
+        </div>
+        <div id="lastContainer">
+            <div>
+                <div class="inner">
+                    <h4>Get Personalised Job Recommendations</h4>
+                    <img src="https://static.naukimg.com/s/7/109/assets/images/register.e0bc10df.png" alt="image2">
+                </div>
+            </div>
+            <p>Registering gives you the benefit to browse & apply variety of jobs based on your preferences</p>
+            <button class="register"><a href="register.html">Register Now</a></button>
+        </div>
+    </div>
+    <div id="footer">
+        <div>
+            <img src="https://static.naukimg.com/s/4/100/i/naukri_Logo.png">
+            <div id="connectUs">
+                <p>Connect with us</p>
+                <div id="socailLogo">
+                    <a href="https://www.facebook.com/Naukri" target="_blank"><img
+                            src="https://static.naukimg.com/s/0/0/i/new-homepage/facebook.svg"></a>
+                    <a href="https://www.instagram.com/naukridotcom/" target="_blank"><img
+                            src="https://static.naukimg.com/s/0/0/i/new-homepage/instagram.svg"></a>
+                    <a href="https://twitter.com/naukri" target="_blank"><img
+                            src="https://static.naukimg.com/s/0/0/i/new-homepage/twitter.svg"></a>
+                    <a href="https://www.linkedin.com/authwall?trk=bf&trkInfo=AQE3CSDBjqbdMQAAAX8voZFA3Yp3b-4jxL4noNA9hCdXwssObZlAlpzUEo9ZF3LPwML5qDN7CYj4SFHIuvlTzValI0NbvAbJiEXpjjLeQC7mDDSQQN1zpBmtQpcLMKb9sZVu660=&originalReferer=&sessionRedirect=https%3A%2F%2Fwww.linkedin.com%2Fcompany%2Fnaukri.com"
+                        target="_blank"><img src="https://static.naukimg.com/s/0/0/i/new-homepage/linkedin.svg"></a>
+                </div>
+            </div>
+        </div>
+        <div class="footpcolor">
+            <p><a href="#">About us</a></p>
+            <p><a href="#">Careers</a></p>
+            <p><a href="#">Employer home</a></p>
+            <p><a href="#">Sitemap</a></p>
+        </div>
+        <div class="footpcolor">
+            <p><a href="#">Help center</a></p>
+            <p><a href="#">Summons/Notices</a></p>
+            <p><a href="#">Grievances</a></p>
+            <p><a href="#">Report issue</a></p>
+        </div>
+        <div class="footpcolor">
+            <p><a href="#">Privacy policy</a></p>
+            <p><a href="#">Terms & conditions</a></p>
+            <p><a href="#">Fraud alert</a></p>
+            <p><a href="#">Trust & safety</a></p>
+        </div>
+        <div id="appStore">
+            <p>Apply on the go</p>
+            <p>Get real-time job updates on our App</p>
+            <div id="appLogo">
+                <a href="https://play.google.com/store/apps/details?id=naukriApp.appModules.login&hl=en&utm_source=naukri&utm_medium=footer"
+                    target="_blank"><img src="https://static.naukimg.com/s/0/0/i/new-homepage/android-app.png"></a>
+                <a href="https://apps.apple.com/in/app/naukri-com-job-search/id482877505" target="_blank"><img
+                        src="https://static.naukimg.com/s/0/0/i/new-homepage/ios-app.png"></a>
+            </div>
+
+        </div>
+    </div>
+    <!-- </body> -->
+    <!-- <script src="/js/savedJob.js"></script> -->

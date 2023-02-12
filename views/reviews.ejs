@@ -1,0 +1,149 @@
+<%layout("boilerplate")%>
+    <link rel="stylesheet" href="/css/stars.css">
+    <link rel="stylesheet" href="/css/reviews.css">
+
+    <div class="contain1" style="margin-top:80px">
+        <%-include('flash') %>
+            <div class=" container mt-5">
+                <div class="glitch">User Experiences</div>
+
+            </div>
+            <div class="card mb-3" id="aboutcard" style="margin-top:70px;width:70%">
+                <div class="row no-gutters">
+                    <div class="col-md-4">
+                        <img src="images/background/insaan.jpg" class="card-img" alt="..." id="nicko">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+
+                            <p class="card-text"><span style="font-size:30px">"</span> Having my roots in south Indian I
+                                couldn't afford going to college. But a nearby cyber cafe provided me with cheap access
+                                to the internet and computer and that's where I found about WebDeck. I grew and bagged a
+                                package worth 25 lpa after discovering the exciting world of the internet and becoming a
+                                member of the online family.
+                                <span style="font-size:30px">"</span>
+                            </p>
+                            <p class="card-text" style="float:right"><small class="text-muted">~ Nick Avocado</small>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card mb-3" id="aboutcard" style="margin-top:40px;width:70%;margin-left:25%">
+                <div class="row no-gutters">
+                    <div class="col-md-4">
+                        <img src="images/reviews/pregnantmahila.jpg" class="card-img" alt="..." id="gordon">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+
+                            <p class="card-text"><span style="font-size:30px">"</span>I didn't get an opportunity to go
+                                to college until I was 22 but that too had to be dropped due to an unwanted pregnancy.
+                                As I heard about TechDeck from one of my friends I started my journey afresh with them.
+                                And now here I am a pro open source contributor and have mentored more than 70 mentees
+                                in the process<span style="font-size:30px">"</span>
+                            </p>
+                            <p class="card-text"><small class="text-muted" style="float:right">~ Emily Prichett</small>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card mb-3" id="aboutcard" style="margin-top:40px;width:70%">
+                <div class="row no-gutters">
+                    <div class="col-md-4">
+                        <img src="images/background/insaan2.jpg" class="card-img" alt="..." id="kapil">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+
+                            <p class="card-text"><span style="font-size:30px">"</span> Throughout my youth, I never
+                                ventured beyond of my suburb, but I never imagined that I could explore the entire globe
+                                as a developer. The finest thing that has ever happened to me was having access to
+                                WebDeck, and I can now bring my brothers along.
+                                <span style="font-size:30px">"</span>
+                            </p>
+                            <p class="card-text"><small class="text-muted" style="float:right">~Maria Muzychuk</small>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </div>
+
+    <div class="contain2">
+        <div class="container">
+
+            <div class="glitch" data-text="">We'd Love to Know About<br>
+                Your Experience with Us </div>
+            <!-- <div class="glow">Leave a Review</div> -->
+            <form action="/reviews" method="post" class="my-3 validated-form" novalidate>
+
+
+                <div class="mb-3">
+                    <fieldset class="starability-growRotate">
+                        <legend style="font-weight:500">Rating : </legend>
+                        <input type="radio" id="no-rate" class="input-no-rate" name="rating" value="1" checked
+                            aria-label="No rating." required />
+                        <input type="radio" id="first-rate1" name="rating" value="1" />
+                        <label for="first-rate1" title="Terrible">1 star</label>
+                        <input type="radio" id="first-rate2" name="rating" value="2" />
+                        <label for="first-rate2" title="Not good">2 stars</label>
+                        <input type="radio" id="first-rate3" name="rating" value="3" />
+                        <label for="first-rate3" title="Average">3 stars</label>
+                        <input type="radio" id="first-rate4" name="rating" value="4" />
+                        <label for="first-rate4" title="Very good">4 stars</label>
+                        <input type="radio" id="first-rate5" name="rating" value="5" />
+                        <label for="first-rate5" title="Amazing">5 stars</label>
+                    </fieldset>
+                </div>
+                <div class="mb-3">
+                    <label for="review" class="form-label" style="font-size:1.6rem;font-weight: 500;">Review : </label>
+                    <textarea name="text" id="review" cols="30" rows="3" class="form-control input-color"
+                        required></textarea>
+                    <div class="valid-feedback">
+                        Looks Good!
+                    </div>
+                </div>
+                <button class="btn btn-success mt-md-3 mb-5">Submit review</button>
+            </form>
+        </div>
+
+        <div>
+
+
+            <div class="scrollbar row" id="ex4">
+                <div class="col-1"></div>
+                <div class="content col-10">
+                    <div id="menuwrapper">
+                        <ul>
+                            <% for(let r of rev){ %>
+                                <li>
+                                    <h3>
+
+                                        <%=r.author.username%>
+                                    </h3>
+                                    <!-- <p class="starability-result" data-rating="<%=r.rating%>"></p> -->
+                                    <h5 style="padding-top:10px;padding-bottom:10px;font-size:20px;">
+                                        <%=r.text %>
+                                    </h5>
+                                    <% if(curruser && r.author.equals(curruser._id)) {%>
+                                        <form action="/reviews/<%=r._id%>?_method=DELETE" method="post">
+                                            <button class="btn btn-sm btn-danger">Delete</button>
+                                        </form>
+                                        <% } %>
+
+                                </li>
+                                <% } %>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+            <br>
+            <br>
+
+            <br>
+            <br>
+        </div>
